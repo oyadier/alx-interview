@@ -1,13 +1,15 @@
 #!/usr/bin/python3
 """
-    The N queens puzzle involves placing N non-attacking queens on an N×N chessboard.
+    The N queens puzzle involves placing N non-attacking
+    queens on an N×N chessboard.
 """
 
 import sys
 
+
 class NQueens:
     """ Class for solving N Queen Problem """
-    
+
     def __init__(self, n):
         self.n = n
         self.res = []
@@ -34,6 +36,7 @@ class NQueens:
         """ Get all solutions for N-Queens problem """
         self.solve([])
         return self.res
+
 
 # Main execution
 if __name__ == "__main__":
