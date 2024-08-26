@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+'''Changes need for totals'''
+
+
 def makeChange(coins, total):
     '''
     Computing number of coins to sum the total
