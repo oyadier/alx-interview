@@ -42,5 +42,3 @@ def isWinner(x: int, nums: list) -> str:
         return 'Ben'
     else:
         return 'Maria'
-
-                                    
