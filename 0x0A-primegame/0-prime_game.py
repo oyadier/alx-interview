@@ -1,11 +1,9 @@
 #!/usr/bin/python3
 def isWinner(x: int, nums: list) -> str:
-    '''
-    The prime game between Mariam And Ben
-    x (Integer):
-        the number of rounds
-    nums (List):
-    List of numbers to pick from
+    ''' The prime game between Mariam And Ben
+    Parameters:
+    x (Integer): the number of rounds
+    nums (List): List of numbers to pick from
     Return:
         Name of the winner
     '''
@@ -14,13 +12,11 @@ def isWinner(x: int, nums: list) -> str:
     winner = []
 
     for value in range(x + 1):
-        print(f"{value} is accessed")
         if value > 1:
             for i in range(2, int(value**0.5) + 1):
                 if value % i == 0:
                     break 
             else:
-                print('Prime number {}'.format(value))
                 news = value
                 count = 0
                 while count <= len(nums):
@@ -36,8 +32,6 @@ def isWinner(x: int, nums: list) -> str:
                 else:
                     isBen = True
                     winner.append(False)
-            print(winner)
-            print(nums)
     if len(nums) % 2 == 0:
         return 'Ben'
     else:
