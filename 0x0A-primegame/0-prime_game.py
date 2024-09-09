@@ -10,11 +10,9 @@ def isWinner(x: int, nums: list) -> str:
     Return:
         Name of the winner
     '''
-    nums = [2, 5, 1, 4, 3, 7]
     isBen = True
     winner = []
-
-    for value in range(x + 1):
+    for value in range(x):
         if value > 1:
             for i in range(2, int(value**0.5) + 1):
                 if value % i == 0:
