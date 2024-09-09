@@ -15,7 +15,7 @@ def isWinner(x: int, nums: list) -> str:
         if value > 1:
             for i in range(2, int(value**0.5) + 1):
                 if value % i == 0:
-                    break 
+                    break
             else:
                 news = value
                 count = 0
@@ -24,11 +24,9 @@ def isWinner(x: int, nums: list) -> str:
                         if i % news == 0:
                             nums.remove(i)
                         count += 1
-                
                 if isBen:
                     isBen = False
                     winner.append(True)
-                    
                 else:
                     isBen = True
                     winner.append(False)
