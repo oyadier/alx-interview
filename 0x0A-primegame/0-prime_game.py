@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+'''Prime game between Mariam and Ben'''
+
+
 def isWinner(x: int, nums: list) -> str:
     ''' The prime game between Mariam And Ben
     Parameters:
